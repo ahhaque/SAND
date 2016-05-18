@@ -48,15 +48,15 @@ Optional options are following:
 * At the end, it reports percentage of labeled data used.
 
 # File output
-1 .log file contains important debug information.
-2 .tmpres file contains the error rates for each chunk.  There are six columns as follows:
+1. .log file contains important debug information.
+2. .tmpres file contains the error rates for each chunk.  There are six columns as follows:
  * Chunk #= The current chunk number. Each chunk contains 1000 instances.
  * FP= How many existing class instances misclassified as novel class in this chunk.
  * FN= How many novel class instances misclassified as existing class in this chunk.
  * NC= How many novel class instances are actually there in this chunk.
  * Err = How many instances are misclassified (including FP and FN) in this chunk.
  * GlobErr = % Err (cumulative) upto the current chunk.
-3 .res file contains the summary result, i.e., the following error rates:
+3. .res file contains the summary result, i.e., the following error rates:
  * FP% = % of existing class instances misclassified as novel
  * FN% = % of novel class instances misclassified as existing class instances.
  * NC (total) = total number of (actual) novel class instances.
