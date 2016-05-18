@@ -1,4 +1,4 @@
-### SAND
+# SAND
 SAND: Semi-Supervised Adaptive Novel Class Detection and Classification over Data Stream
 
 ## Synopsis
@@ -43,11 +43,11 @@ Optional options are following:
 
 
 ## Output
-# Console output
+### Console output
 * The program shows progress or any change point detected in console. 
 * At the end, it reports percentage of labeled data used.
 
-# File output
+#### File output
 1. .log file contains important debug information.
 2. .tmpres file contains the error rates for each chunk.  There are six columns as follows:
  * Chunk #= The current chunk number. Each chunk contains 1000 instances.
