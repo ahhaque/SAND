@@ -5,7 +5,7 @@ SAND: Semi-Supervised Adaptive Novel Class Detection and Classification over Dat
 SAND is a semi-supervised framework for classifying evolving data streams. Unlike many other existing approaches, it detects concept drifts in an unsupervised way by detecting changes in classifier confidences in classifying test instances. It also addresses concept evolution problem by detecting outliers having strong cohesion among themselves. Please refer the paper given below for a details description of the approach. 
 
 ## Requirements
-SAND requires that-
+SAND requires that
 * Input file will be provided in a ARFF format.
 * All the features need to be numeric. If there is a non-numeric featues, those can be converted to numeric features using standard techniques.
 * Features should be normalized to get better performance. 
