@@ -7,7 +7,7 @@ SAND is a semi-supervised framework for classifying evolving data streams. Unlik
 ## Requirements
 SAND requires that
 * Input file will be provided in .arff format.
-* All the features need to be numeric. If there is a non-numeric featues, those can be converted to numeric features using standard techniques.
+* All the features need to be numeric. If there is any non-numeric featues, it should be converted using standard techniques prior using with SAND.
 * Features should be normalized to get better performance. 
 
 ## Environment
@@ -16,22 +16,22 @@ SAND requires that
 * Common Math library v2.2
 * Apache Logging Services v1.2.15
 
-All of above except java sdk are included inside SRC_SAND_v_0_1 & DIST_SAND_v_0_1 folder.
+All of above except java sdk are included inside SRC_SAND_v_0_1 & DIST_SAND_v_0_1 folders.
 
 ## Execution
 To execute the program, use the following steps:
-1. Open a command prompt inside DIST_SAND_v_0_1 folder folder.
+1. Open a command prompt inside DIST_SAND_v_0_1 folder.
 2. Run the command "java -cp SAND_v_0_1.jar [OPTION]"
 
-Options are following:
+[OPTION]s are following:
 * -F 
  * Input file path. Do not include file extension .arff in the file path.
 * -L
  * Maximum number of models in the ensemble. Default value is 6.
 * -U
- * Value for confidence threshold. Please refer to the paper for description of confidence threshold. Default value is 0.90.
+ * Value for confidence threshold. Default value is 0.90. Please refer to the paper for description of confidence threshold.
 * -D
- * use 1 here to execute SAND-D, 0 to execute SAND-F. Please refer to the paper for description about SAND-D, and SAND-F. Default value is 1.
+ * use 1 here to execute SAND-D, 0 to execute SAND-F. Default value is 1. Please refer to the paper for description about SAND-D, and SAND-F.
 * -T
  * Labeling delay in number of instances. Default value for classification only is 1. Use appropriate value for novel class detection.
 * -C
@@ -39,12 +39,12 @@ Options are following:
  
 Optional options are following:
 * -S
- * Size of warm-up period chunks. Default is 2000 instances.
+ * Size of warm-up period chunks. Default size is 2000 instances.
 
 
 ## Output
 #### Console output
-* The program shows progress or any change point detected in console. 
+* Progress or any change point detected throughout execution. 
 * At the end, it reports percentage of labeled data used.
 
 #### File output
