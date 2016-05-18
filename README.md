@@ -19,9 +19,9 @@ SAND requires that
 All of above except java sdk are included inside SRC_SAND_v_0_1 & DIST_SAND_v_0_1 folder.
 
 ## Execution
-To execute the program in a windows operating system:
+To execute the program, use the following steps:
 1. Open a command prompt inside DIST_SAND_v_0_1 folder folder.
-2. Run the command ``java -cp SAND_v_0_1.jar [OPTION]''
+2. Run the command "java -cp SAND_v_0_1.jar [OPTION]"
 
 Options are following:
 * -F 
