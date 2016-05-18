@@ -6,7 +6,7 @@ SAND is a semi-supervised framework for classifying evolving data streams. Unlik
 
 ## Requirements
 SAND requires that
-* Input file will be provided in a ARFF format.
+* Input file will be provided in .arff format.
 * All the features need to be numeric. If there is a non-numeric featues, those can be converted to numeric features using standard techniques.
 * Features should be normalized to get better performance. 
 
