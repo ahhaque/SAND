@@ -43,7 +43,7 @@ Optional options are following:
 
 
 ## Output
-### Console output
+#### Console output
 * The program shows progress or any change point detected in console. 
 * At the end, it reports percentage of labeled data used.
 
