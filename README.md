@@ -21,11 +21,15 @@ All of above except java sdk are included inside SRC_SAND_v_0_1 & DIST_SAND_v_0_
 ## Execution
 To execute the program, use the following steps:
 1. Open a command prompt inside DIST_SAND_v_0_1 folder.
-2. Run the command "java -cp SAND_v_0_1.jar [OPTION]"
+2. Run the command "java -cp SAND_v_0_1.jar [OPTION(S)]"
 
-[OPTION]s are following:
+### Option(s):
 * -F 
  * Input file path. Do not include file extension .arff in the file path.
+ 
+Optional option(s):
+* -S
+ * Size of warm-up period chunks. Default size is 2000 instances.
 * -L
  * Maximum number of models in the ensemble. Default value is 6.
 * -U
@@ -36,18 +40,14 @@ To execute the program, use the following steps:
  * Labeling delay in number of instances. Default value for classification only is 1. Use appropriate value for novel class detection.
 * -C
  * Classification delay in number of instances. Default value for classification only is 0. Use appropriate value for novel class detection.
- 
-Optional options are following:
-* -S
- * Size of warm-up period chunks. Default size is 2000 instances.
 
 
 ## Output
-#### Console output
+### Console output
 * Progress or any change point detected throughout execution. 
 * At the end, it reports percentage of labeled data used.
 
-#### File output
+### File output
 1. .log file contains important debug information.
 2. .tmpres file contains the error rates for each chunk.  There are six columns as follows:
  * Chunk #= The current chunk number. Each chunk contains 1000 instances.
