@@ -27,7 +27,7 @@ To execute the program, use the following steps:
 * -F 
  * Input file path. Do not include file extension .arff in the file path.
  
-Optional option(s):
+### Optional option(s):
 * -S
  * Size of warm-up period chunks. Default size is 2000 instances.
 * -L
