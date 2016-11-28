@@ -261,7 +261,7 @@ public class ReascCtrl extends weka.classifiers.Classifier implements OptionHand
    
    * @return an enumeration of all the available options.
    */
-   
+/*   
     @Override
   public Enumeration listOptions() {
 
@@ -278,7 +278,7 @@ public class ReascCtrl extends weka.classifiers.Classifier implements OptionHand
     
     return newVector.elements();
   }
-
+*/
   /**
    * Parses a given list of options.
    *
