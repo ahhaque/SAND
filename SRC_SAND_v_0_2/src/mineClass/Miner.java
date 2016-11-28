@@ -1677,8 +1677,8 @@ public class Miner implements OptionHandler{
 			      "\t(default 0.90)",
 			      "U", 1, "-U <confidence threshold>"));
     newVector.
-	addElement(new Option("\tECHO-D (use 1)/ECHO-F (use 0)?" +
-			      "\t(default 1 (ECHO-D)",
+	addElement(new Option("\tSAND-D (use 1)/SAND-F (use 0)?" +
+			      "\t(default 1 (SAND-D)",
 			      "D", 1, "-D <1/0>"));
     newVector.
 	addElement(new Option("\tSet time delay for labeling." +
