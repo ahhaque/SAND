@@ -21,7 +21,7 @@ All of above except java sdk are included inside SRC_SAND_v_0_1 & DIST_SAND_v_0_
 ## Execution
 To execute the program, use the following steps:
 1. Open a command prompt inside DIST_SAND_v_0_1 folder.
-2. Run the command "java -cp SAND_v_0_1.jar [OPTION(S)]"
+2. Run the command "java -jar SAND_v_0_1.jar [OPTION(S)]"
 
 ### Option(s):
 * -F 
