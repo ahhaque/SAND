@@ -63,4 +63,4 @@ To execute the program, use the following steps:
  * ERR% = % classification error (including FP, FN, and misclassification within existing class).
 
 ## Reference
-[SAND: Semi-Supervised Adaptive Novel Class Detection and Classification over Data Stream](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12335)
+[SAND: Semi-supervised Adaptive Novel Class Detection and Classification over Data Stream](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12335)
