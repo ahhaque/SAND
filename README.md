@@ -29,17 +29,17 @@ To execute the program, use the following steps:
  
 ### Optional option(s):
 * -S
- * Size of warm-up period chunks. Default size is 2000 instances.
+  * Size of warm-up period chunks. Default size is 2000 instances.
 * -L
- * Maximum number of models in the ensemble. Default value is 6.
+  * Maximum number of models in the ensemble. Default value is 6.
 * -U
- * Value for confidence threshold. Default value is 0.90. Please refer to the paper for description of confidence threshold.
+  * Value for confidence threshold. Default value is 0.90. Please refer to the paper for description of confidence threshold.
 * -D
- * use 1 here to execute SAND-D, 0 to execute SAND-F. Default value is 1. Please refer to the paper for description about SAND-D, and SAND-F.
+  * use 1 here to execute SAND-D, 0 to execute SAND-F. Default value is 1. Please refer to the paper for description about SAND-D, and SAND-F.
 * -T
- * Labeling delay in number of instances. Default value for classification only is 1. Use appropriate value for novel class detection.
+  * Labeling delay in number of instances. Default value for classification only is 1. Use appropriate value for novel class detection.
 * -C
- * Classification delay in number of instances. Default value for classification only is 0. Use appropriate value for novel class detection.
+  * Classification delay in number of instances. Default value for classification only is 0. Use appropriate value for novel class detection.
 
 
 ## Output
@@ -50,17 +50,17 @@ To execute the program, use the following steps:
 ### File output
 1. .log file contains important debug information.
 2. .tmpres file contains the error rates for each chunk.  There are six columns as follows:
- * Chunk #= The current chunk number. Each chunk contains 1000 instances.
- * FP= How many existing class instances misclassified as novel class in this chunk.
- * FN= How many novel class instances misclassified as existing class in this chunk.
- * NC= How many novel class instances are actually there in this chunk.
- * Err = How many instances are misclassified (including FP and FN) in this chunk.
- * GlobErr = % Err (cumulative) upto the current chunk.
+  * Chunk #= The current chunk number. Each chunk contains 1000 instances.
+  * FP= How many existing class instances misclassified as novel class in this chunk.
+  * FN= How many novel class instances misclassified as existing class in this chunk.
+  * NC= How many novel class instances are actually there in this chunk.
+  * Err = How many instances are misclassified (including FP and FN) in this chunk.
+  * GlobErr = % Err (cumulative) upto the current chunk.
 3. .res file contains the summary result, i.e., the following error rates:
- * FP% = % of existing class instances misclassified as novel
- * FN% = % of novel class instances misclassified as existing class instances.
- * NC (total) = total number of (actual) novel class instances.
- * ERR% = % classification error (including FP, FN, and misclassification within existing class).
+  * FP% = % of existing class instances misclassified as novel
+  * FN% = % of novel class instances misclassified as existing class instances.
+  * NC (total) = total number of (actual) novel class instances.
+  * ERR% = % classification error (including FP, FN, and misclassification within existing class).
 
 ## Reference
 [SAND: Semi-supervised Adaptive Novel Class Detection and Classification over Data Stream](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12335)
